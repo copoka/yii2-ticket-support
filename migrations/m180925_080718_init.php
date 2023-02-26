@@ -48,7 +48,7 @@ class m180925_080718_init extends Migration
             'updated_at' => $this->integer()->notNull(),
         ], $tableOptions);
         $this->addForeignKey('{{%fk_support_ticket_head_user_id-user_id}}', '{{%support_ticket_head}}', 'user_id',
-            $this->getModule()->userModel::tableName(), $this->getModule()->userPK, 'CASCADE', 'CASCADE');
+        '{{%user}}', 'id', 'CASCADE', 'CASCADE');
         $this->addForeignKey('{{%fk_support_ticket_head_category-support_category_id}}', '{{%support_ticket_head}}',
             'category_id',
             '{{%support_category}}', 'id');
@@ -67,7 +67,7 @@ class m180925_080718_init extends Migration
         $this->addForeignKey('{{%fk_support_ticket_content_id-support_ticket_head_id}}', '{{%support_ticket_content}}',
             'id_ticket', '{{%support_ticket_head}}', 'id', 'CASCADE', 'CASCADE');
         $this->addForeignKey('{{%fk_support_ticket_content_user_id-user_id}}', '{{%support_ticket_content}}',
-            'user_id', $this->getModule()->userModel::tableName(), $this->getModule()->userPK, 'CASCADE', 'CASCADE');
+            'user_id', '{{%user}}', 'id', 'CASCADE', 'CASCADE');
     }
 
     /**
