@@ -1,14 +1,14 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
-namespace akiraz2\support\components;
+namespace copoka\support\components;
 
-use akiraz2\support\traits\ModuleTrait;
+use copoka\support\traits\ModuleTrait;
 use Yii;
 use yii\base\ActionEvent;
 use yii\base\Behavior;
@@ -21,7 +21,7 @@ use yii\web\NotFoundHttpException;
  * {
  *     return [
  *         'backend' => [
- *             'class' => akiraz2\support\components\BackendFilter::class,
+ *             'class' => copoka\support\components\BackendFilter::class,
  *             'actions' => [
  *                 'index',
  *                 'view',

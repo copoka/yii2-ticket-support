@@ -1,18 +1,18 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
 /* @var $this yii\web\View */
-/* @var $model akiraz2\support\models\Category */
+/* @var $model copoka\support\models\Category */
 
 
 /* breadcrumbs */
 $this->params['breadcrumbs'][] = [
-    'label' => \akiraz2\support\Module::t('support', 'Categories'),
+    'label' => \copoka\support\Module::t('support', 'Categories'),
     'url' => ['index']
 ];
 $this->params['breadcrumbs'][] = $this->title;

@@ -1,16 +1,16 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
-use akiraz2\support\models\Category;
+use copoka\support\models\Category;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model akiraz2\support\models\Ticket */
+/* @var $model copoka\support\models\Ticket */
 /* @var $form yii\widgets\ActiveForm */
 $catList = Category::getCatList();
 ?>
@@ -26,8 +26,8 @@ $catList = Category::getCatList();
     <?= $form->field($model, 'content')->textarea(['rows' => 8]) ?>
 
     <div class="form-group">
-        <?= \yii\helpers\Html::submitButton($model->isNewRecord ? \akiraz2\support\Module::t('support', 'Create') :
-            \akiraz2\support\Module::t('support', 'Update'),
+        <?= \yii\helpers\Html::submitButton($model->isNewRecord ? \copoka\support\Module::t('support', 'Create') :
+            \copoka\support\Module::t('support', 'Update'),
             ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 

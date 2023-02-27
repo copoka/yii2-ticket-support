@@ -1,5 +1,5 @@
 {
-  "name": "akiraz2/yii2-ticket-support",
+  "name": "copoka/yii2-ticket-support",
   "description": "Yii2 Support Ticket Module, easy, flexible, fast",
   "type": "yii2-extension",
   "keywords": [
@@ -11,7 +11,7 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "akiraz2",
+      "name": "copoka",
       "email": "akiraz@bk.ru"
     }
   ],
@@ -27,10 +27,10 @@
   },
   "autoload": {
     "psr-4": {
-      "akiraz2\\support\\": ""
+      "copoka\\support\\": ""
     }
   },
   "extra": {
-    "bootstrap": "akiraz2\\support\\Bootstrap"
+    "bootstrap": "copoka\\support\\Bootstrap"
   }
 }

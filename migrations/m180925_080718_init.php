@@ -2,18 +2,18 @@
 
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
-namespace akiraz2\support\migrations;
+namespace copoka\support\migrations;
 
 use yii\db\Migration;
 
 class m180925_080718_init extends Migration
 {
-    use \akiraz2\support\traits\ModuleTrait;
+    use \copoka\support\traits\ModuleTrait;
 
     /**
      * @inheritdoc

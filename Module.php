@@ -1,15 +1,15 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
-namespace akiraz2\support;
+namespace copoka\support;
 
-use akiraz2\support\models\Content;
-use akiraz2\support\models\Ticket;
+use copoka\support\models\Content;
+use copoka\support\models\Ticket;
 use PhpImap\Mailbox;
 use Yii;
 use yii\queue\Queue;
@@ -25,7 +25,7 @@ class Module extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'akiraz2\support\controllers';
+    public $controllerNamespace = 'copoka\support\controllers';
 
     /** @var linked user (for example, 'common\models\User::class' */
     public $userModel;
@@ -151,7 +151,7 @@ class Module extends \yii\base\Module
      */
     public static function t($category, $message, $params = [], $language = null)
     {
-        return Yii::t('akiraz2/' . $category, $message, $params, $language);
+        return Yii::t('copoka/' . $category, $message, $params, $language);
     }
 
     /**

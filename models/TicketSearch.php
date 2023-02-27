@@ -1,23 +1,23 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
 
-namespace akiraz2\support\models;
+namespace copoka\support\models;
 
 use common\models\Account;
 use MongoDB\BSON\UTCDateTime;
-use akiraz2\support\traits\ModuleTrait;
+use copoka\support\traits\ModuleTrait;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
 /**
- * TicketSearch represents the model behind the search form about `akiraz2\ticket\models\Ticket`.
+ * TicketSearch represents the model behind the search form about `copoka\ticket\models\Ticket`.
  */
 class TicketSearch extends Ticket
 {

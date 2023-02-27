@@ -1,16 +1,16 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
-namespace akiraz2\support\models;
+namespace copoka\support\models;
 
-use akiraz2\support\jobs\SendMailJob;
-use akiraz2\support\Mailer;
-use akiraz2\support\traits\ModuleTrait;
+use copoka\support\jobs\SendMailJob;
+use copoka\support\Mailer;
+use copoka\support\traits\ModuleTrait;
 use Yii;
 
 /**
@@ -62,7 +62,7 @@ class Content extends ContentBase
         if (!empty($status) && in_array($status, array_keys($list))) {
             return $list[$status];
         }
-        return \akiraz2\support\Module::t('support', 'Unknown');
+        return \copoka\support\Module::t('support', 'Unknown');
     }
 
     /**
@@ -73,8 +73,8 @@ class Content extends ContentBase
     public static function getStatusOption($e = null)
     {
         $option = [
-            self::STATUS_ACTIVE => \akiraz2\support\Module::t('support', 'Active'),
-            self::STATUS_INACTIVE => \akiraz2\support\Module::t('support', 'Inactive'),
+            self::STATUS_ACTIVE => \copoka\support\Module::t('support', 'Active'),
+            self::STATUS_INACTIVE => \copoka\support\Module::t('support', 'Inactive'),
         ];
         if (is_array($e)) {
             foreach ($e as $i) {
@@ -122,12 +122,12 @@ class Content extends ContentBase
     public function attributeLabels()
     {
         return [
-            'id' => \akiraz2\support\Module::t('support', 'ID'),
-            'id_ticket' => \akiraz2\support\Module::t('support', 'Id Ticket'),
-            'content' => \akiraz2\support\Module::t('support', 'Content'),
-            'user_id' => \akiraz2\support\Module::t('support', 'Created By'),
-            'created_at' => \akiraz2\support\Module::t('support', 'Created At'),
-            'updated_at' => \akiraz2\support\Module::t('support', 'Updated At'),
+            'id' => \copoka\support\Module::t('support', 'ID'),
+            'id_ticket' => \copoka\support\Module::t('support', 'Id Ticket'),
+            'content' => \copoka\support\Module::t('support', 'Content'),
+            'user_id' => \copoka\support\Module::t('support', 'Created By'),
+            'created_at' => \copoka\support\Module::t('support', 'Created At'),
+            'updated_at' => \copoka\support\Module::t('support', 'Updated At'),
         ];
     }
 

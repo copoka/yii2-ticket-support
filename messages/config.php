@@ -1,8 +1,8 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
@@ -20,8 +20,8 @@ return [
     'color' => null,
     'interactive' => true,
     'help' => null,
-    'sourcePath' => '@vendor/akiraz2/yii2-ticket-support/',
-    'messagePath' => '@vendor/akiraz2/yii2-ticket-support/messages',
+    'sourcePath' => '@vendor/copoka/yii2-ticket-support/',
+    'messagePath' => '@vendor/copoka/yii2-ticket-support/messages',
     'languages' => [
         'ru-RU', 'de',
     ],

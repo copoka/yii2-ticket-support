@@ -1,21 +1,21 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
 /* @var $this yii\web\View */
-/* @var $model akiraz2\support\models\Category */
+/* @var $model copoka\support\models\Category */
 
 
 $this->params['breadcrumbs'][] = [
-    'label' => \akiraz2\support\Module::t('support', 'Categories'),
+    'label' => \copoka\support\Module::t('support', 'Categories'),
     'url' => ['index']
 ];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = \akiraz2\support\Module::t('support', 'Update');
+$this->params['breadcrumbs'][] = \copoka\support\Module::t('support', 'Update');
 
 /* misc */
 //$js=file_get_contents(__DIR__.'/index.min.js');

@@ -1,16 +1,16 @@
 <?php
 /**
  * @author akiraz@bk.ru
- * @link https://github.com/akiraz2/yii2-ticket-support
- * @copyright 2018 akiraz2
+ * @link https://github.com/copoka/yii2-ticket-support
+ * @copyright 2018 copoka
  * @license MIT
  */
 
-namespace akiraz2\support\commands;
+namespace copoka\support\commands;
 
-use akiraz2\support\models\Ticket;
-use akiraz2\support\Module;
-use akiraz2\support\traits\ModuleTrait;
+use copoka\support\models\Ticket;
+use copoka\support\Module;
+use copoka\support\traits\ModuleTrait;
 use yii\console\Controller;
 use yii\helpers\Console;
 
