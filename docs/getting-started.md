@@ -10,7 +10,7 @@ Yii2-ticket-support can be installed using composer. Run following command to do
 install Yii2-ticket-support:
 
 ```bash
-composer require akiraz2/Yii2-ticket-support "dev-master"
+composer require copoka/Yii2-ticket-support "dev-master"
 ```
 
 ### 2. Configure
