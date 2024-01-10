@@ -15,6 +15,7 @@ use yii\widgets\ActiveForm;
 /* @var $model copoka\support\models\Ticket */
 /* @var $reply copoka\support\models\Content */
 
+///////////////////////////////////////////\/
 \copoka\support\assets\TicketAsset::register($this);
 
 $this->params['breadcrumbs'][] = ['label' => \copoka\support\Module::t('support', 'Tickets'), 'url' => ['index']];

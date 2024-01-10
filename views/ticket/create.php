@@ -14,6 +14,7 @@
 $this->params['breadcrumbs'][] = ['label' => \copoka\support\Module::t('support', 'Tickets'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 
+/////////////////////////////////////////////////////////////
 \copoka\support\assets\TicketAsset::register($this);
 
 ?>
